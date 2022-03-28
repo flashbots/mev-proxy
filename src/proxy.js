@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const request = require('request')
 const _ = require('lodash')
 
-const ALLOWED_METHODS = ['eth_sendBundle', 'eth_sendMegabundle']
+const ALLOWED_METHODS = ['eth_sendBundle', 'eth_sendMegabundle', 'eth_sendPrivateRawTransaction']
 
 function help() {
   console.log('node ./miner/proxy.js [PUBLIC_PORT] [GETH_PORT] [GETH_URL]')
